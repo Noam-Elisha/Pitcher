@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/octaveText"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:text="Octave 4"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:insetLeft="0dp"
+                android:onClick="playSound"
+                android:text="C"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/CSHARP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="C#"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="D"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/DSHARP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="D#"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="E"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="F"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/FSHARP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="F#"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/G"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="G"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/GSHARP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="G#"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="A"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/ASHARP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="A#"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#302E2B"
+                android:onClick="playSound"
+                android:text="B"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/OCTAVEDOWN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#302E2B"
+                    android:onClick="OctaveDown"
+                    android:text="-"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/OCTAVEUP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#302E2B"
+                    android:onClick="OctaveUp"
+                    android:text="+"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

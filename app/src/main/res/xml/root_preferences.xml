@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <EditTextPreference
+            android:inputType="number"
+            app:defaultValue="441"
+            app:key="tuning"
+            app:singleLineTitle="false"
+            app:title="Tuning: A = "
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="equal"
+            android:title="Equal Temperament" />
+
+        <ListPreference
+            android:dialogTitle="Select root note"
+            android:entries="@array/scaleOptions"
+            android:entryValues="@array/scaleOptions"
+            android:key="scale"
+            android:summary="%s"
+            android:title="Just intonation root note:"
+            app:defaultValue="A" />
+
+</PreferenceScreen>
